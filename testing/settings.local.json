@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(node -p \"const p=require\\('./package.json'\\); JSON.stringify\\({dep:p.dependencies['@expo/ngrok']??null, dev:p.devDependencies['@expo/ngrok']}\\)\")"
+    ]
+  }
+}
