@@ -13,7 +13,8 @@ export type Article = {
   /** Shown as a warning banner until the article is reviewed. Remove once approved. */
   reviewNote?: string;
   sections: ArticleSection[];
-  sources: string[];
+  /** Full web addresses starting with https:// */
+  sources: `https://${string}`[];
 };
 
 export const ARTICLES: Article[] = [
