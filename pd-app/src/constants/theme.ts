@@ -9,20 +9,49 @@ import { Platform } from 'react-native';
 
 export const Colors = {
   light: {
-    text: '#000000',
-    background: '#ffffff',
-    backgroundElement: '#F0F0F3',
-    backgroundSelected: '#E0E1E6',
-    textSecondary: '#60646C',
+    text: '#13233A',
+    background: '#EEF5FB',
+    backgroundElement: '#FFFFFF',
+    backgroundSelected: '#DCEAF7',
+    textSecondary: '#5B6B7C',
+    tint: '#2A6FDB',
+    tintSoft: '#DCE9FB',
+    success: '#2E9E6A',
+    warning: '#B86E00',
+    warningSoft: '#FFF1DC',
+    // One soft background + strong icon color per app section.
+    learn: '#DCEBFB',
+    learnIcon: '#2A6FDB',
+    checklist: '#DDF3EA',
+    checklistIcon: '#2E9E6A',
+    articles: '#ECE6FB',
+    articlesIcon: '#7B5CD6',
+    community: '#FDE8D7',
+    communityIcon: '#D9702A',
   },
   dark: {
-    text: '#ffffff',
-    background: '#000000',
-    backgroundElement: '#212225',
-    backgroundSelected: '#2E3135',
-    textSecondary: '#B0B4BA',
+    text: '#F2F6FA',
+    background: '#0B1520',
+    backgroundElement: '#16222F',
+    backgroundSelected: '#22303F',
+    textSecondary: '#A3B1C0',
+    tint: '#6EA8FF',
+    tintSoft: '#1D3350',
+    success: '#4CC38A',
+    warning: '#F2B259',
+    warningSoft: '#3A2A12',
+    learn: '#1A2E48',
+    learnIcon: '#6EA8FF',
+    checklist: '#16352A',
+    checklistIcon: '#4CC38A',
+    articles: '#2A2445',
+    articlesIcon: '#A68CFF',
+    community: '#3A2718',
+    communityIcon: '#F2A066',
   },
 } as const;
+
+export type Section = 'learn' | 'checklist' | 'articles' | 'community';
 
 export type ThemeColor = keyof typeof Colors.light & keyof typeof Colors.dark;
 
